@@ -1,0 +1,19 @@
+module.exports=(sequelize,type)=>{
+    return sequelize.define('test',{
+        id:{
+            type:type.INTEGER,
+            allowNull:false,
+            primaryKey:true,
+            autoIncrement:true
+        },
+        name:{
+            type:type.STRING,
+        },
+        email:{
+            type:type.STRING
+        },
+        password:{
+            type:type.STRING
+        }
+    })
+}
